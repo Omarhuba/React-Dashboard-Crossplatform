@@ -1,0 +1,28 @@
+.footer{
+    height: 100%;
+    background-color: black;
+    color: white;
+    article{
+        padding-top: .4rem ;
+        display: flex;
+        align-items: center;
+
+    }
+    p{
+        text-align: start;
+        display: flex;
+        padding-left: 1rem;
+    }
+}
+
+
+@media screen and(max-width: 768px){
+    .footer{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        p{
+            width: 80%;
+        }
+    }
+ }
