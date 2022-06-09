@@ -4,7 +4,7 @@ import axios from "axios";
 
 export const Departures = () => {
   const [tunnelbana, setTunnelbana] = useState([]);
-  const [tvärbana, setTvärbana] = useState([]);
+  // const [tvärbana, setTvärbana] = useState([]);
 
   useEffect(() => {
     const fetchTime = async () => {
@@ -18,11 +18,11 @@ export const Departures = () => {
 
       setTunnelbana(t_bana);
 
-      const tvär_bana = response.data.Departure.filter(
-        (object) => object.name === "Länstrafik - Spårväg 30"
-      );
+    //   const tvär_bana = response.data.Departure.filter(
+    //     (object) => object.name === "Länstrafik - Spårväg 30"
+    //   );
 
-      setTvärbana(tvär_bana);
+    //   setTvärbana(tvär_bana);
     };
 
     fetchTime();
